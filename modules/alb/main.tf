@@ -4,7 +4,7 @@ provider "aws" {
 
 # Create ALB
 resource "aws_lb" "alb" {
-  name               = "main-alb"
+  name               = "main-alb1"
   internal           = false
   load_balancer_type = "application"
   security_groups    = var.security_group_ids
@@ -13,7 +13,7 @@ resource "aws_lb" "alb" {
   enable_deletion_protection = true
 
   tags = {
-    Name = "main-alb"
+    Name = "main-alb1"
   }
 }
 
